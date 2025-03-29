@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.co{
+    height: 80px;
+    width: 200px;
+    position: relative;
+    border-radius: 100px;
+    background-color: aliceblue;
+    border: 8px solid black;
+}
+
+/* .co .circle{
+    position: absolute;
+    left: 3px;
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+} */
+ .co::before{
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+ }
+
+ .co.active::before{
+    left:calc(100% - 50px - 14px);
+    background-color: black;
+ }
+ body.dark{
+    background-color: black;
+ }
