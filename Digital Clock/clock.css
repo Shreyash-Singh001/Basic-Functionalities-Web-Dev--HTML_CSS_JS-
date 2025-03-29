@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Playwrite+DE+Grund:wght@100..400&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron' , sans-serif;
+    transition: all 0.3s ease;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    background: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark{
+    background: #24292D;
+}
+section .cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 5px 10px black;
+    border-radius: 12px;
+    position: relative;
+}
+.dark .cont{
+    background: #384046;
+}
+section .cont .time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont .time .time-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time .time-col .time-tex{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    background: skyblue;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px ;
+}
+
+.dark .time .time-col .time-tex{
+    background: #975454;
+    color: #fbfdff;
+}
+
+.cont .time-col .time-tex,
+.time .time-col .colon{
+    font-size: 35px;
+    font-weight: 600;
+}
+.time-tex .text{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.time .time-col .colon{
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.time .time-col .am-pm{
+    margin: 0 10px 70px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+}
+.dark .time .time-col .am-pm{
+    color: #fbfdff;
+}
+section .cont .icons i{
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    height: 30px;
+    font-size: 1.5rem;
+    width: 30px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fbfdff;
+}
+.dark .cont .icons i{
+    background-color: #ffffff;
+}
+section .cont .icons i:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px black;
+}
+.cont .icons i.fa-sun{
+    color: black;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    background-color: aliceblue;
+    top: 11px;
+    opacity: 0;
+    pointer-events: none;
+
+}
+.dark .cont .icons i.fa-sun{
+    background: #fbfdff;
+    opacity: 1;
+    pointer-events: none;
+}
+.dark .cont .icons i.fa-moon{
+    opacity: 0;
+}
